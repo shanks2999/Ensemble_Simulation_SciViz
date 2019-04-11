@@ -1,0 +1,60 @@
+body { margin: 0; }
+
+#scene { width: 90%; height: 90%}
+
+/* SVG styling */
+svg {
+    font-family: helvetica, sans-serif;
+}
+
+path, line {
+    stroke: #777;
+}
+.mySVG {
+    font-family: Bookman Old Style;
+    background-color: #666;
+}
+
+.left {
+    float: left;
+    /*width: 70%;*/
+    /*height: 100%;*/
+    text-align: right;
+    margin: 2px 10px;
+    display: inline-block;
+    /*height: auto;*/
+}
+
+.right {
+    float: left;
+    /*width: 30%;*/
+    /*height: 100%;*/
+    text-align: left;
+    margin: 10px 20px;
+    display: inline-block;
+    /*height: auto;*/
+}
+
+header {
+    background-color: #666;
+    /*padding: 30px;*/
+    text-align: center;
+    font-size: 15px;
+    color: white;
+}
+footer {
+    background-color: #777;
+    /*padding: 10px;*/
+    text-align: center;
+    color: white;
+}
+.textHeader {
+    text-align: center;
+    font-size: 20px;
+    color: #666;
+}
+.textHelp {
+    margin: 10px 50px;
+    font-size: 15px;
+    color: #666;
+}

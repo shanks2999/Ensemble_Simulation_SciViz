@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8>
+
+    <title>CS594 - HW3</title>
+
+    <!-- CSS Libraries -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <!-- CSS Source -->
+    <link rel="stylesheet" href="./src/css/main.css" />
+
+    <!-- JS Libraries -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="lib/js/three.min.js"></script>
+    <script src="lib/js/OrbitControls.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.6/d3.min.js"></script>
+
+    <!-- JS Source -->
+    <script src="./src/js/scene.js"></script>
+    <script src="./src/js/particleSystem.js"></script>
+    <script src="./src/js/main.js"></script>
+
+</head>
+
+<body onload="App.start();">
+<header>
+<h1 align="center"> Flow Visualization with Three.js</h1>
+</header>
+<!--<div style="width:100%; display:flex; height:auto">-->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="particleDiv col-md-6">
+                <p class="textHeader">3-Dimensional View</p>
+                <div id="scene"></div>
+            </div>
+            <div class="right">
+                <p class="textHeader">2-Dimensional Slice</p>
+                <div style="display: inline-block">
+                    <p class="textHeader">XY Slice</p>
+                    <svg class="mySVG" id="mySVG_XY" width="300px" height="600px"></svg>
+                </div>
+                <div style="display: inline-block">
+                    <p class="textHeader">XZ Slice</p>
+                    <svg class="mySVG" id="mySVG_XZ" width="300px" height="300px"></svg>
+                </div>
+            </div>
+        </div>
+    </div>
+<br><br>
+<div class="textHelp">
+    <h4><b><u>Info</u>:</b></h4>
+    <ul><p>
+        <li>Use mouse click & drag to rotate the cylinder.</li>
+        <li>Use mouse scroll to zoom in and zoom out.</li>
+        <li>Use keys(A/D) to move the XY 3D-rectangular plane left & right.</li>
+        <li>Use keys(W/S) to move the XZ 3D-rectangular plane up & down.</li>
+        <li>Once you hit the keys (W, A, S, D) all particles inside the 3-D cylinder will be greyed out.<br>
+            Only particles which fall inside the 3D-rectangle(XY & XZ) will show the color concentration<br>
+            The 2-D view on the right will show the particles which fall inside both the rectangles.</li>
+    </p></ul>
+    <h4><b><u>Credits</u>: </b></h4>
+    <p>The website was built using using HTML5, CSS, Javascript, D3.js and Three.js.<br>
+        Dataset Used: <a href="https://www.uni-kl.de/sciviscontest/" target="_blank">San Diego Supercomputing Center</a><br>
+        Dataset provided by: <a href="https://www.evl.uic.edu/marai/" target="_blank">Dr. Marai</a><br>
+    </p>
+</div>
+<br><br>
+<footer>
+    <p> © 2018 CS-594 </p>
+</footer>
+<!--</div>-->
+</body>
+</html>
